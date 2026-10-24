@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Admin dashboard | HCM Lite</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQId9HOtUkQPRij8PJ0lG8lIy2YFjGHjV7-I3X6byycmQ&s" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-dark app-nav">
+        <div class="container"><span class="navbar-brand fw-bold">Sheeban Tech</span>
+            <ul class="navbar-nav flex-row flex-wrap me-auto gap-3">
+                <li class="nav-item"><a class="nav-link active" href="admin.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="employees.html">Employees</a></li>
+                <li class="nav-item"><a class="nav-link" href="leaves.html">Leaves</a></li>
+                <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+                <li class="nav-item"><a class="nav-link" href="payslip.html">Payslips</a></li>
+            </ul><span class="text-white-50 small">Sheeban Malik (admin)</span><a class="btn btn-sm btn-outline-light"
+                href="../index.html">Log out</a>
+        </div>
+    </nav>
+    <main class="container py-4">
+        <!-- Tab 1 -->
+
+        <div class="row g-3 mb-3">
+            <div class="col-6 col-md">
+                <div class="card stat ">
+                    <div class="card-body">
+                        <div class="stat-n">42</div>
+                        <div class="text-muted small">Employees</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="col-6 col-md">
+                <div class="card stat ">
+                    <div class="card-body">
+                        <div class="stat-n">38</div>
+                        <div class="text-muted small">Present today</div>
+                    </div>
+                </div>
+            </div>
+            <!-- tab 3 -->
+            <div class="col-6 col-md">
+                <div class="card stat warn">
+                    <div class="card-body">
+                        <div class="stat-n">3</div>
+                        <div class="text-muted small">Late today</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tab 4 -->
+            <div class="col-6 col-md">
+                <div class="card stat ">
+                    <div class="card-body">
+                        <div class="stat-n">5</div>
+                        <div class="text-muted small">On leave today</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tab 5 -->
+            <div class="col-6 col-md">
+                <div class="card stat warn">
+                    <div class="card-body">
+                        <div class="stat-n">4</div>
+                        <div class="text-muted small">Pending leaves</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table  -->
+        <div class="row g-3">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header">Today's attendance</div>
+                    <div class="table-responsive">
+                        <table class="table mb-0 align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Employee</th>
+                                    <th>Department</th>
+                                    <th>In</th>
+                                    <th>Out</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ali Raza</td>
+                                    <td>Sales</td>
+                                    <td>–</td>
+                                    <td>–</td>
+                                    <td><span class="badge text-bg-primary">on leave</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Hina Noor</td>
+                                    <td>Design</td>
+                                    <td>–</td>
+                                    <td>–</td>
+                                    <td><span class="badge text-bg-primary">on leave</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Bilal Ahmed</td>
+                                    <td>IT</td>
+                                    <td>08:52</td>
+                                    <td>–</td>
+                                    <td><span class="badge text-bg-success">present</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Maryam Iqbal</td>
+                                    <td>HR</td>
+                                    <td>09:31</td>
+                                    <td>–</td>
+                                    <td><span class="badge text-bg-warning">late</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Usman Tariq</td>
+                                    <td>IT</td>
+                                    <td>09:00</td>
+                                    <td>13:10</td>
+                                    <td><span class="badge text-bg-info">half day</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Zainab Ali</td>
+                                    <td>Sales</td>
+                                    <td>–</td>
+                                    <td>–</td>
+                                    <td><span class="badge text-bg-secondary">not in yet</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">Smart helper</div>
+                    <div class="card-body">
+                        <div class="chat-box mb-2">
+                            <div class="msg">Ask me about employees, leave or lateness today.</div>
+                            <div class="msg mine">Who is on leave today?</div>
+                            <div class="msg">On leave today (2): Ali Raza, Hina Noor.</div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <input class="form-control" placeholder="Ask a question">
+                            <button class="btn btn-primary">Ask</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

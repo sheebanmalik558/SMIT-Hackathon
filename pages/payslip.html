@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Payslip | HCM Lite</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQId9HOtUkQPRij8PJ0lG8lIy2YFjGHjV7-I3X6byycmQ&s" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark app-nav">
+        <div class="container"><span class="navbar-brand fw-bold">Sheeban Tech</span>
+            <ul class="navbar-nav flex-row flex-wrap me-auto gap-3">
+                <li class="nav-item"><a class="nav-link" href="admin.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="employees.html">Employees</a></li>
+                <li class="nav-item"><a class="nav-link" href="leaves.html">Leaves</a></li>
+                <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+                <li class="nav-item"><a class="nav-link active" href="payslip.html">Payslips</a></li>
+            </ul><span class="text-white-50 small">Sheeban Malik (admin)</span><a class="btn btn-sm btn-outline-light"
+                href="../index.html">Log out</a>
+        </div>
+    </nav>
+    <main class="container py-4 ">
+        <div class="d-flex flex-wrap gap-2 mb-3 no-print"><select class="form-select w-auto">
+                <option>Bilal Ahmed</option>
+                <option>Maryam Iqbal</option>
+            </select><input type="month" class="form-control w-auto" value="2026-10"><a class="btn btn-primary"
+                href="#">Print / Save as PDF</a></div>
+        <div class="card slip">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="mb-0">Sheeban Tech</h4>
+                        <div class="text-muted">Payslip for 2026-10</div>
+                    </div>
+                    <div class="text-end"><b>Bilal Ahmed</b><br>IT</div>
+                </div>
+                <hr>
+                <table class="table table-sm mb-0">
+                    <tr>
+                        <td>Monthly salary</td>
+                        <td class="text-end">Rs 90,000</td>
+                    </tr>
+                    <tr>
+                        <td>Working days in month</td>
+                        <td class="text-end">22</td>
+                    </tr>
+                    <tr>
+                        <td>Pay per day</td>
+                        <td class="text-end">Rs 4,091</td>
+                    </tr>
+                    <tr>
+                        <td>Days present</td>
+                        <td class="text-end">20</td>
+                    </tr>
+                    <tr>
+                        <td>Late arrivals</td>
+                        <td class="text-end">1</td>
+                    </tr>
+                    <tr>
+                        <td>Half days</td>
+                        <td class="text-end">1</td>
+                    </tr>
+                    <tr>
+                        <td>Absent days</td>
+                        <td class="text-end">1</td>
+                    </tr>
+                    <tr>
+                        <td>Deduction</td>
+                        <td class="text-end">− Rs 6,136</td>
+                    </tr>
+                    <tr class="fw-bold table-active">
+                        <td>Net salary</td>
+                        <td class="text-end">Rs 83,864</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
